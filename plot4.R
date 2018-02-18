@@ -20,7 +20,7 @@ plot4<- function(){
   ## subsetting required data
   data_sub <- subset(data_set, Date == "2007-02-01" | Date =="2007-02-02")
   
-  ## plotting energy sub meter vs date&time
+  ## subplots
   png("plot4.png", width=480, height=480)
   par(mfrow=c(2,2))
   with(data_sub, plot(merged_dt, Global_active_power, type="l", xlab="", ylab="Global Active Power"))
